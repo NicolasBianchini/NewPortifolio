@@ -8,7 +8,7 @@ import { Contact } from './components/contact';
 import { Footer } from './components/footer';
 import { ThemeSwitcher } from './components/theme-switcher';
 import { LanguageSwitcher } from './components/language-switcher';
-import { LanguageProvider } from './context/language-provider';
+import { LanguageProvider } from './context/language-context';
 
 function App() {
   return (

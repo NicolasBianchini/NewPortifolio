@@ -1,11 +1,10 @@
 import React from 'react';
 import { Button, Tooltip } from "@heroui/react";
-import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/language-context';
 
 export const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
-  
+
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'pt-br' : 'en');
   };
@@ -20,11 +19,7 @@ export const LanguageSwitcher = () => {
         onPress={toggleLanguage}
         className="shadow-md"
       >
-        <Icon 
-          icon={language === 'en' ? 'lucide:flag' : 'lucide:flag'} 
-          className="w-5 h-5" 
-        />
-        <span className="ml-1 text-xs font-bold">
+        <span className="text-xs font-bold flex items-center justify-center">
           {language === 'en' ? 'PT' : 'EN'}
         </span>
       </Button>

@@ -5,8 +5,8 @@ import { useLanguage } from '../context/language-context';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { t } = useLanguage();
-  
+  const { t, language } = useLanguage();
+
   const sections = [
     { name: t('home'), href: "#home" },
     { name: t('about'), href: "#about" },
@@ -14,12 +14,11 @@ export const Footer = () => {
     { name: t('projects'), href: "#projects" },
     { name: t('contact'), href: "#contact" },
   ];
-  
+
   const socialLinks = [
     { name: "GitHub", icon: "lucide:github", href: "https://github.com/NicolasBianchini" },
-    { name: "LinkedIn", icon: "lucide:linkedin", href: "https://linkedin.com/" },
-    { name: "Twitter", icon: "lucide:twitter", href: "https://twitter.com/" },
-    { name: "Instagram", icon: "lucide:instagram", href: "https://instagram.com/" },
+    { name: "LinkedIn", icon: "lucide:linkedin", href: "https://www.linkedin.com/in/nicolastresoldi/" },
+    { name: "Instagram", icon: "lucide:instagram", href: "https://instagram.com/n_tresoldi/" },
   ];
 
   return (
@@ -31,29 +30,31 @@ export const Footer = () => {
               <span className="gradient-text">Nicolas</span>
             </h3>
             <p className="text-foreground-600 mb-4">
-              Full Stack Developer specialized in building exceptional digital experiences.
+              {language === 'en'
+                ? 'Full Stack Developer specialized in building exceptional digital experiences.'
+                : 'Desenvolvedor Full Stack especializado em criar experiências digitais excepcionais.'}
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
-                <Link 
+                <Link
                   key={link.name}
                   href={link.href}
                   isExternal
                   aria-label={link.name}
-                  className="text-foreground-500 hover:text-primary-500 transition-colors"
+                  className="text-foreground hover:text-primary-500 transition-colors"
                 >
                   <Icon icon={link.icon} className="w-5 h-5" />
                 </Link>
               ))}
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('quickLinks')}</h3>
             <ul className="space-y-2">
               {sections.map((section) => (
                 <li key={section.name}>
-                  <Link 
+                  <Link
                     href={section.href}
                     className="text-foreground-600 hover:text-primary-500 transition-colors"
                   >
@@ -63,29 +64,25 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-foreground-600">
-                <Icon icon="lucide:mail" className="w-4 h-4" />
-                <Link href="mailto:nicolas@example.com">nicolas@example.com</Link>
+                <Icon icon="lucide:mail" className="w-4 h-4 text-current" />
+                <Link href="mailto:nicolastresoldi@gmail.com">nicolastresoldi@gmail.com</Link>
               </li>
               <li className="flex items-center gap-2 text-foreground-600">
-                <Icon icon="lucide:phone" className="w-4 h-4" />
-                <Link href="tel:+15551234567">+1 (555) 123-4567</Link>
-              </li>
-              <li className="flex items-center gap-2 text-foreground-600">
-                <Icon icon="lucide:map-pin" className="w-4 h-4" />
-                <span>São Paulo, Brazil</span>
+                <Icon icon="lucide:map-pin" className="w-4 h-4 text-current" />
+                <span>Porto Alegre, Brazil</span>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-default-200 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground-500 text-sm">
-            © {currentYear} Nicolas Bianchini. {t('allRightsReserved')}
+            © {currentYear} Nicolas Tresoldi. {t('allRightsReserved')}
           </p>
           <p className="text-foreground-500 text-sm mt-2 md:mt-0">
             {t('designedBuilt')} <span className="text-primary-500">❤</span>

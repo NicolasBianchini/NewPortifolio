@@ -3,64 +3,70 @@ import { Card, CardBody, CardFooter, Button, Chip, Link } from "@heroui/react";
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/language-context';
+import ImobImage from '../assets/Images/Imob.png';
+import PokedexImage from '../assets/Images/Pokedex.png';
+import ControleFinanceiroImage from '../assets/Images/ControleFinanceiro.png';
+import MenteFemininaImage from '../assets/Images/MenteFeminina.png';
+import EstudanteImage from '../assets/Images/Estudante.png';
+import TriunfoImage from '../assets/Images/Triunfo.png';
 
 export const Projects = () => {
   const { t } = useLanguage();
-  
+
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      title: "Sistema de Busca Imóveis",
+      description: "Com uma interface moderna e fácil de usar, a Imob conecta você às melhores oportunidades do mercado imobiliário. Ideal para quem busca agilidade, segurança e uma boa experiência na hora de negociar um imóvel.",
+      image: ImobImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://148-imob.netlify.app/",
+      codeUrl: "indisponivel"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Sistema de Gerenciamento de uma lavanderia",
       description: "A collaborative task management application with real-time updates and team collaboration features.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2",
-      tags: ["Vue", "Express", "PostgreSQL", "Socket.io"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      image: TriunfoImage,
+      tags: ["React", "Vite", "Firebase", "Css"],
+      demoUrl: "https://152-triunfo.netlify.app/home",
+      codeUrl: "indisponivel"
     },
     {
       id: 3,
-      title: "Fitness Tracker",
-      description: "A comprehensive fitness tracking application that helps users monitor workouts and nutrition.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-      tags: ["React Native", "Firebase", "Redux", "Chart.js"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      title: "Sistema para solicitação de carteirinha de estudante",
+      description: "O Estudante é um sistema simples e intuitivo para solicitação de carteirinhas estudantis. Com poucos cliques, o aluno preenche seus dados, envia os documentos e acompanha o processo de emissão de forma prática e segura.",
+      image: EstudanteImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://143-estudante.netlify.app/",
+      codeUrl: "indisponivel"
     },
     {
       id: 4,
-      title: "Social Media Dashboard",
-      description: "An analytics dashboard for social media managers to track performance across platforms.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=4",
-      tags: ["Angular", "Django", "MySQL", "D3.js"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      title: "Sistema para controle financeiro",
+      description: "O site Análise de Gastos é uma ferramenta online para organizar e acompanhar suas finanças pessoais. Ele permite registrar despesas, visualizar gráficos interativos e categorizar os gastos, facilitando o controle financeiro do dia a dia. Ideal para quem busca entender melhor para onde o dinheiro está indo.",
+      image: ControleFinanceiroImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://analise-de-gastos.vercel.app/",
+      codeUrl: "https://github.com/NicolasBianchini/analise-de-gastos"
     },
     {
       id: 5,
-      title: "Real Estate Listing",
-      description: "A property listing platform with advanced search, filtering, and virtual tour capabilities.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=5",
-      tags: ["Next.js", "Node.js", "MongoDB", "Google Maps API"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      title: "Pokedex",
+      description: "O site Pokédex é uma aplicação interativa que permite explorar informações sobre diversos Pokémon. Com uma interface inspirada na Pokédex original, o usuário pode buscar Pokémon pelo nome ou número, visualizar imagens, tipos, habilidades e outras informações. É uma ferramenta divertida e educativa para fãs da franquia.",
+      image: PokedexImage,
+      tags: ["Html", "Css", "JavaScript"],
+      demoUrl: "https://nicolasbianchini.github.io/Pokedex/",
+      codeUrl: "https://github.com/NicolasBianchini/Pokedex"
     },
     {
       id: 6,
-      title: "Weather Application",
-      description: "A weather forecasting application with location-based services and interactive maps.",
-      image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=6",
-      tags: ["React", "Express", "OpenWeather API", "Leaflet"],
-      demoUrl: "#",
-      codeUrl: "https://github.com/NicolasBianchini"
+      title: "Mente Feminina",
+      description: "O site aborda a saúde mental das mulheres em diferentes contextos, como trabalho, maternidade e relações sociais. Apresenta informações, dados e reflexões com o objetivo de conscientizar sobre os desafios enfrentados pelas mulheres e a importância do cuidado psicológico.",
+      image: MenteFemininaImage,
+      tags: ["Html", "Css", "JavaScript"],
+      demoUrl: "https://nicolasbianchini.github.io/TrabalhoPucrs.io-main/",
+      codeUrl: "https://github.com/NicolasBianchini/TrabalhoPucrs.io-main"
     }
   ];
 
@@ -82,7 +88,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="bg-content1">
       <div className="section-container">
-        <motion.h2 
+        <motion.h2
           className="section-title text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,8 +97,8 @@ export const Projects = () => {
         >
           {t('myProjects').split(' ')[0]} <span className="gradient-text">{t('myProjects').split(' ')[1]}</span>
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={container}
           initial="hidden"
@@ -101,10 +107,13 @@ export const Projects = () => {
         >
           {projects.map((project) => (
             <motion.div key={project.id} variants={item}>
-              <Card className="h-full border border-default-200 hover:border-primary-500 transition-all">
+              <Card
+                className="h-full border border-default-200 hover:border-primary-500"
+                style={{ transition: "border-color 0.5s ease" }}
+              >
                 <div className="relative overflow-hidden h-48">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                   />
@@ -121,24 +130,25 @@ export const Projects = () => {
                   </div>
                 </CardBody>
                 <CardFooter className="flex justify-between gap-2">
-                  <Button 
+                  <Button
                     as={Link}
                     href={project.demoUrl}
                     isExternal
                     variant="flat"
                     color="primary"
-                    startContent={<Icon icon="lucide:external-link" />}
+                    startContent={<Icon icon="lucide:external-link" className="text-current" />}
                   >
                     {t('liveDemo')}
                   </Button>
-                  <Button 
+                  <Button
                     as={Link}
                     href={project.codeUrl}
                     isExternal
                     variant="bordered"
-                    startContent={<Icon icon="lucide:github" />}
+                    startContent={<Icon icon="lucide:github" className="text-current" />}
+                    isDisabled={project.codeUrl === "indisponivel"}
                   >
-                    {t('viewCode')}
+                    {project.codeUrl === "indisponivel" ? "Indisponível" : t('viewCode')}
                   </Button>
                 </CardFooter>
               </Card>

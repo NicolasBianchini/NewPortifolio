@@ -1,9 +1,9 @@
 import React from 'react';
-import { 
-  Navbar as HeroNavbar, 
-  NavbarBrand, 
-  NavbarContent, 
-  NavbarItem, 
+import {
+  Navbar as HeroNavbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -48,8 +48,8 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <HeroNavbar 
-      isMenuOpen={isMenuOpen} 
+    <HeroNavbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       isBordered
       maxWidth="xl"
@@ -70,18 +70,18 @@ export const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="font-bold text-xl"
           >
-            <span className="gradient-text">Nicolas</span>
+            <span className="gradient-text">Nicolas Tresoldi</span>
           </motion.div>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
         {menuItems.map((item, index) => (
-          <NavbarItem 
+          <NavbarItem
             key={`${item.name}-${index}`}
             isActive={activeSection === item.href.substring(1)}
           >
-            <Link 
+            <Link
               href={item.href}
               color={activeSection === item.href.substring(1) ? "primary" : "foreground"}
               className="font-medium"
@@ -94,12 +94,12 @@ export const Navbar = () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button 
-            as={Link} 
-            color="primary" 
-            href="#contact" 
+          <Button
+            as={Link}
+            color="primary"
+            href="#contact"
             variant="flat"
-            startContent={<Icon icon="lucide:mail" />}
+            startContent={<Icon icon="lucide:mail" className="text-current" />}
           >
             {t('contactMe')}
           </Button>

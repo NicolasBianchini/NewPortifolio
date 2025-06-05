@@ -17,30 +17,30 @@ const translations = {
     'projects': 'Projects',
     'contact': 'Contact',
     'contactMe': 'Contact Me',
-    
+
     // Hero
     'greeting': 'Hi, I\'m',
     'role': 'Full Stack Developer',
     'heroDescription': 'I build modern web applications with cutting-edge technologies. Passionate about creating intuitive and performant user experiences.',
     'viewWork': 'View My Work',
-    
+
     // About
     'aboutMe': 'About Me',
     'aboutTitle': 'Full Stack Developer with a passion for creating exceptional digital experiences',
     'aboutDescription1': 'I\'m a passionate Full Stack Developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create seamless, user-friendly experiences that solve real-world problems.',
     'aboutDescription2': 'My journey in web development began recently, and I\'m constantly learning and adapting to new technologies to deliver the best solutions.',
-    
+
     // Skills
     'mySkills': 'My Skills',
     'frontend': 'Frontend',
     'backend': 'Backend',
     'databaseDevOps': 'Database & DevOps',
-    
+
     // Projects
     'myProjects': 'My Projects',
     'liveDemo': 'Live Demo',
     'viewCode': 'View Code',
-    
+
     // Contact
     'getInTouch': 'Get In Touch',
     'letsTalk': 'Let\'s Talk',
@@ -53,7 +53,7 @@ const translations = {
     'howCanIHelp': 'How can I help you?',
     'sendMessage': 'Send Message',
     'location': 'Location',
-    
+
     // Footer
     'quickLinks': 'Quick Links',
     'allRightsReserved': 'All rights reserved.',
@@ -67,30 +67,30 @@ const translations = {
     'projects': 'Projetos',
     'contact': 'Contato',
     'contactMe': 'Fale Comigo',
-    
+
     // Hero
     'greeting': 'Olá, eu sou',
     'role': 'Desenvolvedor Full Stack',
     'heroDescription': 'Eu construo aplicações web modernas com tecnologias de ponta. Apaixonado por criar experiências intuitivas e de alto desempenho.',
     'viewWork': 'Ver Meus Projetos',
-    
+
     // About
     'aboutMe': 'Sobre Mim',
     'aboutTitle': 'Desenvolvedor Full Stack com paixão por criar experiências digitais excepcionais',
     'aboutDescription1': 'Sou um Desenvolvedor Full Stack apaixonado com experiência na construção de aplicações web modernas. Com uma base sólida em tecnologias frontend e backend, crio experiências intuitivas e amigáveis que resolvem problemas reais.',
     'aboutDescription2': 'Minha jornada no desenvolvimento web começou recentemente, e estou constantemente aprendendo e me adaptando a novas tecnologias para entregar as melhores soluções.',
-    
+
     // Skills
     'mySkills': 'Minhas Habilidades',
     'frontend': 'Frontend',
     'backend': 'Backend',
     'databaseDevOps': 'Banco de Dados & DevOps',
-    
+
     // Projects
     'myProjects': 'Meus Projetos',
     'liveDemo': 'Demo ao Vivo',
     'viewCode': 'Ver Código',
-    
+
     // Contact
     'getInTouch': 'Entre em Contato',
     'letsTalk': 'Vamos Conversar',
@@ -103,7 +103,7 @@ const translations = {
     'howCanIHelp': 'Como posso ajudar você?',
     'sendMessage': 'Enviar Mensagem',
     'location': 'Localização',
-    
+
     // Footer
     'quickLinks': 'Links Rápidos',
     'allRightsReserved': 'Todos os direitos reservados.',
@@ -114,7 +114,7 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('pt-br');
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;
