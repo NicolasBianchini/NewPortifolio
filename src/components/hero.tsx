@@ -80,11 +80,11 @@ export const Hero = () => {
               <Link href="https://github.com/NicolasBianchini" isExternal aria-label="GitHub" className="text-foreground hover:text-primary-500 transition-colors">
                 <Icon icon="lucide:github" className="w-6 h-6" />
               </Link>
-              <Link href="https://linkedin.com/" isExternal aria-label="LinkedIn" className="text-foreground hover:text-primary-500 transition-colors">
+              <Link href="https://www.linkedin.com/in/nicolastresoldi/" isExternal aria-label="LinkedIn" className="text-foreground hover:text-primary-500 transition-colors">
                 <Icon icon="lucide:linkedin" className="w-6 h-6" />
               </Link>
-              <Link href="https://twitter.com/" isExternal aria-label="Twitter" className="text-foreground hover:text-primary-500 transition-colors">
-                <Icon icon="lucide:twitter" className="w-6 h-6" />
+              <Link href="https://www.instagram.com/n_tresoldi/" isExternal aria-label="Twitter" className="text-foreground hover:text-primary-500 transition-colors">
+                <Icon icon="lucide:instagram" className="w-6 h-6" />
               </Link>
             </motion.div>
           </motion.div>
