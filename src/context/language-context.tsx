@@ -40,6 +40,27 @@ const translations = {
     'myProjects': 'My Projects',
     'liveDemo': 'Live Demo',
     'viewCode': 'View Code',
+    'unavailable': 'Unavailable',
+
+    // Project titles
+    'projectImobTitle': 'Real Estate Search System',
+    'projectTriunfoTitle': 'Laundry Management System',
+    'projectFGJNTitle': 'Law Firm Management System',
+    'projectFinanceTitle': 'Financial Control System',
+    'projectPokedexTitle': 'Pokedex',
+    'projectMenteFemininaTitle': 'Feminine Mind',
+    'projectLavaFacilTitle': 'Laundry Company Website',
+    'projectPortfolioTitle': 'My Portfolio',
+
+    // Project descriptions
+    'projectImobDesc': 'With a modern and easy-to-use interface, Imob connects you to the best opportunities in the real estate market. Ideal for those seeking agility, security, and a good experience when negotiating a property.',
+    'projectTriunfoDesc': 'Laundry management system with client management, invoicing, and other business functionalities.',
+    'projectFGJNDesc': 'The system is a law firm management system with functionalities for managing clients, cases, lawyers, etc.',
+    'projectFinanceDesc': 'The Expense Analysis website is an online tool to organize and track your personal finances. It allows you to record expenses, view interactive charts, and categorize spending, making daily financial control easier. Ideal for those who want to better understand where their money is going.',
+    'projectPokedexDesc': 'The Pokédex website is an interactive application that allows you to explore information about various Pokémon. With an interface inspired by the original Pokédex, users can search for Pokémon by name or number, view images, types, abilities, and other information. It\'s a fun and educational tool for franchise fans.',
+    'projectMenteFemininaDesc': 'The website addresses women\'s mental health in different contexts, such as work, motherhood, and social relationships. It presents information, data, and reflections with the aim of raising awareness about the challenges faced by women and the importance of psychological care.',
+    'projectLavaFacilDesc': 'Website for a small laundry company to help promote their services and attract more customers.',
+    'projectPortfolioDesc': 'My personal portfolio with information about me, my projects, my skills, and contacts.',
 
     // Contact
     'getInTouch': 'Get In Touch',
@@ -90,6 +111,27 @@ const translations = {
     'myProjects': 'Meus Projetos',
     'liveDemo': 'Demo ao Vivo',
     'viewCode': 'Ver Código',
+    'unavailable': 'Indisponível',
+
+    // Project titles
+    'projectImobTitle': 'Sistema de Busca Imóveis',
+    'projectTriunfoTitle': 'Sistema de Gerenciamento de uma lavanderia',
+    'projectFGJNTitle': 'Sistema de gerenciamento de uma empresa de advocacia',
+    'projectFinanceTitle': 'Sistema para controle financeiro',
+    'projectPokedexTitle': 'Pokedex',
+    'projectMenteFemininaTitle': 'Mente Feminina',
+    'projectLavaFacilTitle': 'Site para uma empresa de lavanderia',
+    'projectPortfolioTitle': 'Meu Portfólio',
+
+    // Project descriptions
+    'projectImobDesc': 'Com uma interface moderna e fácil de usar, a Imob conecta você às melhores oportunidades do mercado imobiliário. Ideal para quem busca agilidade, segurança e uma boa experiência na hora de negociar um imóvel.',
+    'projectTriunfoDesc': 'Sistema de gerenciamento de uma lavanderia, com funcionalidades de gerenciamento de clientes, notas fiscais, etc.',
+    'projectFGJNDesc': 'O sistema é um sistema de gerenciamento de uma empresa de advocacia, com funcionalidades de gerenciamento de clientes, processos, advogados, etc.',
+    'projectFinanceDesc': 'O site Análise de Gastos é uma ferramenta online para organizar e acompanhar suas finanças pessoais. Ele permite registrar despesas, visualizar gráficos interativos e categorizar os gastos, facilitando o controle financeiro do dia a dia. Ideal para quem busca entender melhor para onde o dinheiro está indo.',
+    'projectPokedexDesc': 'O site Pokédex é uma aplicação interativa que permite explorar informações sobre diversos Pokémon. Com uma interface inspirada na Pokédex original, o usuário pode buscar Pokémon pelo nome ou número, visualizar imagens, tipos, habilidades e outras informações. É uma ferramenta divertida e educativa para fãs da franquia.',
+    'projectMenteFemininaDesc': 'O site aborda a saúde mental das mulheres em diferentes contextos, como trabalho, maternidade e relações sociais. Apresenta informações, dados e reflexões com o objetivo de conscientizar sobre os desafios enfrentados pelas mulheres e a importância do cuidado psicológico.',
+    'projectLavaFacilDesc': 'Site para uma empresa de lavanderia pequena para ajudar a divulgar seus serviços e atrair mais clientes.',
+    'projectPortfolioDesc': 'Meu portfólio pessoal, com informações sobre mim, meus projetos, minhas habilidades e contatos.',
 
     // Contact
     'getInTouch': 'Entre em Contato',

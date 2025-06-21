@@ -18,8 +18,8 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Sistema de Busca Imóveis",
-      description: "Com uma interface moderna e fácil de usar, a Imob conecta você às melhores oportunidades do mercado imobiliário. Ideal para quem busca agilidade, segurança e uma boa experiência na hora de negociar um imóvel.",
+      titleKey: "projectImobTitle",
+      descriptionKey: "projectImobDesc",
       image: ImobImage,
       tags: ["React", "Vite", "TypeScript", "Css"],
       demoUrl: "https://148-imob.netlify.app/",
@@ -27,8 +27,8 @@ export const Projects = () => {
     },
     {
       id: 2,
-      title: "Sistema de Gerenciamento de uma lavanderia",
-      description: "Sistema de gerenciamento de uma lavanderia, com funcionalidades de gerenciamento de clientes, notas fiscais, etc.",
+      titleKey: "projectTriunfoTitle",
+      descriptionKey: "projectTriunfoDesc",
       image: TriunfoImage,
       tags: ["React", "Vite", "Firebase", "Css"],
       demoUrl: "https://152-triunfo.netlify.app/home",
@@ -36,8 +36,8 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Sistema de gerenciamento de uma empresa de advocacia",
-      description: "O sistema é um sistema de gerenciamento de uma empresa de advocacia, com funcionalidades de gerenciamento de clientes, processos, advogados, etc.",
+      titleKey: "projectFGJNTitle",
+      descriptionKey: "projectFGJNDesc",
       image: FGJNImage,
       tags: ["React", "Next.js", "Firebase", "TypeScript", "TailwindCSS"],
       demoUrl: "https://fgjnadvogados.netlify.app/",
@@ -45,8 +45,8 @@ export const Projects = () => {
     },
     {
       id: 4,
-      title: "Sistema para controle financeiro",
-      description: "O site Análise de Gastos é uma ferramenta online para organizar e acompanhar suas finanças pessoais. Ele permite registrar despesas, visualizar gráficos interativos e categorizar os gastos, facilitando o controle financeiro do dia a dia. Ideal para quem busca entender melhor para onde o dinheiro está indo.",
+      titleKey: "projectFinanceTitle",
+      descriptionKey: "projectFinanceDesc",
       image: ControleFinanceiroImage,
       tags: ["React", "Vite", "TypeScript", "Css"],
       demoUrl: "https://analise-de-gastos.vercel.app/",
@@ -54,8 +54,8 @@ export const Projects = () => {
     },
     {
       id: 5,
-      title: "Pokedex",
-      description: "O site Pokédex é uma aplicação interativa que permite explorar informações sobre diversos Pokémon. Com uma interface inspirada na Pokédex original, o usuário pode buscar Pokémon pelo nome ou número, visualizar imagens, tipos, habilidades e outras informações. É uma ferramenta divertida e educativa para fãs da franquia.",
+      titleKey: "projectPokedexTitle",
+      descriptionKey: "projectPokedexDesc",
       image: PokedexImage,
       tags: ["Html", "Css", "JavaScript"],
       demoUrl: "https://nicolasbianchini.github.io/Pokedex/",
@@ -63,8 +63,8 @@ export const Projects = () => {
     },
     {
       id: 6,
-      title: "Mente Feminina",
-      description: "O site aborda a saúde mental das mulheres em diferentes contextos, como trabalho, maternidade e relações sociais. Apresenta informações, dados e reflexões com o objetivo de conscientizar sobre os desafios enfrentados pelas mulheres e a importância do cuidado psicológico.",
+      titleKey: "projectMenteFemininaTitle",
+      descriptionKey: "projectMenteFemininaDesc",
       image: MenteFemininaImage,
       tags: ["Html", "Css", "JavaScript"],
       demoUrl: "https://nicolasbianchini.github.io/TrabalhoPucrs.io-main/",
@@ -72,8 +72,8 @@ export const Projects = () => {
     },
     {
       id: 7,
-      title: "Site para uma empresa de lavanderia",
-      description: "Site para uma empresa de lavanderia pequena para ajudar a divulgar seus serviços e atrair mais clientes.",
+      titleKey: "projectLavaFacilTitle",
+      descriptionKey: "projectLavaFacilDesc",
       image: LavaFacilImage,
       tags: ["WordPress"],
       demoUrl: "https://lavafacilnsr.wordpress.com/?_gl=1*1br8aal*_gcl_au*ODY3NTYxNTMzLjE3NDI0NDQ5Mzk.",
@@ -81,8 +81,8 @@ export const Projects = () => {
     },
     {
       id: 8,
-      title: "Meu Portifolio",
-      description: "Meu portifolio pessoal, com informações sobre mim, meus projetos, minhas habilidades e contatos.",
+      titleKey: "projectPortfolioTitle",
+      descriptionKey: "projectPortfolioDesc",
       image: MeuPortfolioImage,
       tags: ["React", "Vite", "TypeScript", "TailwindCSS"],
       demoUrl: "https://nicolatresoldi.netlify.app/",
@@ -134,7 +134,7 @@ export const Projects = () => {
                 <div className="relative overflow-hidden h-48" style={{ height: '12rem' }}>
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={t(project.titleKey)}
                     className="project-image transition-transform hover:scale-105 duration-300"
                     style={{
                       objectFit: 'cover',
@@ -145,8 +145,8 @@ export const Projects = () => {
                   />
                 </div>
                 <CardBody className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-foreground-600 mb-4">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-2">{t(project.titleKey)}</h3>
+                  <p className="text-foreground-600 mb-4">{t(project.descriptionKey)}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, index) => (
                       <Chip key={index} size="sm" variant="flat" color="primary">
@@ -174,7 +174,7 @@ export const Projects = () => {
                     startContent={<Icon icon="lucide:github" className="text-current" />}
                     isDisabled={project.codeUrl === "indisponivel"}
                   >
-                    {project.codeUrl === "indisponivel" ? "Indisponível" : t('viewCode')}
+                    {project.codeUrl === "indisponivel" ? t('unavailable') : t('viewCode')}
                   </Button>
                 </CardFooter>
               </Card>
