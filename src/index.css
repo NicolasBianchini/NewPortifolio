@@ -27,3 +27,11 @@ body {
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500;
 }
+
+/* Force object-fit cover for project images */
+.project-image {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}

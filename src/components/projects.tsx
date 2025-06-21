@@ -7,8 +7,10 @@ import ImobImage from '../assets/Images/Imob.png';
 import PokedexImage from '../assets/Images/Pokedex.png';
 import ControleFinanceiroImage from '../assets/Images/ControleFinanceiro.png';
 import MenteFemininaImage from '../assets/Images/MenteFeminina.png';
-import EstudanteImage from '../assets/Images/Estudante.png';
 import TriunfoImage from '../assets/Images/Triunfo.png';
+import FGJNImage from '../assets/Images/Fgjn.png';
+import LavaFacilImage from '../assets/Images/LavaFacil.png';
+import MeuPortfolioImage from '../assets/Images/MeuPortfolio.png';
 
 export const Projects = () => {
   const { t } = useLanguage();
@@ -26,7 +28,7 @@ export const Projects = () => {
     {
       id: 2,
       title: "Sistema de Gerenciamento de uma lavanderia",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
+      description: "Sistema de gerenciamento de uma lavanderia, com funcionalidades de gerenciamento de clientes, notas fiscais, etc.",
       image: TriunfoImage,
       tags: ["React", "Vite", "Firebase", "Css"],
       demoUrl: "https://152-triunfo.netlify.app/home",
@@ -34,12 +36,12 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: "Sistema para solicitação de carteirinha de estudante",
-      description: "O Estudante é um sistema simples e intuitivo para solicitação de carteirinhas estudantis. Com poucos cliques, o aluno preenche seus dados, envia os documentos e acompanha o processo de emissão de forma prática e segura.",
-      image: EstudanteImage,
-      tags: ["React", "Vite", "TypeScript", "Css"],
-      demoUrl: "https://143-estudante.netlify.app/",
-      codeUrl: "indisponivel"
+      title: "Sistema de gerenciamento de uma empresa de advocacia",
+      description: "O sistema é um sistema de gerenciamento de uma empresa de advocacia, com funcionalidades de gerenciamento de clientes, processos, advogados, etc.",
+      image: FGJNImage,
+      tags: ["React", "Next.js", "Firebase", "TypeScript", "TailwindCSS"],
+      demoUrl: "https://fgjnadvogados.netlify.app/",
+      codeUrl: "https://github.com/NicolasBianchini/estrutura-de-dados"
     },
     {
       id: 4,
@@ -67,6 +69,24 @@ export const Projects = () => {
       tags: ["Html", "Css", "JavaScript"],
       demoUrl: "https://nicolasbianchini.github.io/TrabalhoPucrs.io-main/",
       codeUrl: "https://github.com/NicolasBianchini/TrabalhoPucrs.io-main"
+    },
+    {
+      id: 7,
+      title: "Site para uma empresa de lavanderia",
+      description: "Site para uma empresa de lavanderia pequena para ajudar a divulgar seus serviços e atrair mais clientes.",
+      image: LavaFacilImage,
+      tags: ["WordPress"],
+      demoUrl: "https://lavafacilnsr.wordpress.com/?_gl=1*1br8aal*_gcl_au*ODY3NTYxNTMzLjE3NDI0NDQ5Mzk.",
+      codeUrl: "indisponivel"
+    },
+    {
+      id: 8,
+      title: "Meu Portifolio",
+      description: "Meu portifolio pessoal, com informações sobre mim, meus projetos, minhas habilidades e contatos.",
+      image: MeuPortfolioImage,
+      tags: ["React", "Vite", "TypeScript", "TailwindCSS"],
+      demoUrl: "https://nicolatresoldi.netlify.app/",
+      codeUrl: "https://github.com/NicolasBianchini/NewPortifolio"
     }
   ];
 
@@ -111,11 +131,17 @@ export const Projects = () => {
                 className="h-full border border-default-200 hover:border-primary-500"
                 style={{ transition: "border-color 0.5s ease" }}
               >
-                <div className="relative overflow-hidden h-48">
+                <div className="relative overflow-hidden h-48" style={{ height: '12rem' }}>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                    className="project-image transition-transform hover:scale-105 duration-300"
+                    style={{
+                      objectFit: 'cover',
+                      width: '100%',
+                      height: '100%',
+                      display: 'block'
+                    }}
                   />
                 </div>
                 <CardBody className="p-4">

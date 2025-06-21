@@ -17,6 +17,7 @@ export const Skills = () => {
         { name: "TypeScript", icon: "logos:typescript-icon" },
         { name: "React", icon: "logos:react" },
         { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+        { name: "WordPress", icon: "logos:wordpress-icon" },
       ]
     },
     {
