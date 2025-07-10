@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardBody, CardFooter, Button, Chip, Link } from "@heroui/react";
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
@@ -11,9 +10,10 @@ import TriunfoImage from '../assets/Images/Triunfo.png';
 import FGJNImage from '../assets/Images/Fgjn.png';
 import LavaFacilImage from '../assets/Images/LavaFacil.png';
 import MeuPortfolioImage from '../assets/Images/MeuPortfolio.png';
-import FinatrixImage from '../assets/Images/FinatrixImage.png';
+import FinatrixImage from '../assets/Images/Finatriximage.png';
 import RafisHotwheelsImage from '../assets/Images/RafisHotwheels.png';
 import LeitorFiscalImage from '../assets/Images/LeitorFiscalImage.png';
+
 
 export const Projects = () => {
   const { t } = useLanguage();
