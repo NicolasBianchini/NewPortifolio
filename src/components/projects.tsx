@@ -11,6 +11,9 @@ import TriunfoImage from '../assets/Images/Triunfo.png';
 import FGJNImage from '../assets/Images/Fgjn.png';
 import LavaFacilImage from '../assets/Images/LavaFacil.png';
 import MeuPortfolioImage from '../assets/Images/MeuPortfolio.png';
+import FinatrixImage from '../assets/Images/FinatrixImage.png';
+import RafisHotwheelsImage from '../assets/Images/RafisHotwheels.png';
+import LeitorFiscalImage from '../assets/Images/LeitorFiscalImage.png';
 
 export const Projects = () => {
   const { t } = useLanguage();
@@ -54,6 +57,33 @@ export const Projects = () => {
     },
     {
       id: 5,
+      titleKey: "projectFinatrixTitle",
+      descriptionKey: "projectFinatrixDesc",
+      image: FinatrixImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://175-finatrix.netlify.app/",
+      codeUrl: "indisponivel"
+    },
+    {
+      id: 6,
+      titleKey: "projectRafisHotwheelsTitle",
+      descriptionKey: "projectRafisHotwheelsDesc",
+      image: RafisHotwheelsImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://rafishotwheels.netlify.app/",
+      codeUrl: "indisponivel"
+    },
+    {
+      id: 7,
+      titleKey: "projectLeitorFiscalTitle",
+      descriptionKey: "projectLeitorFiscalDesc",
+      image: LeitorFiscalImage,
+      tags: ["React", "Vite", "TypeScript", "Css"],
+      demoUrl: "https://174-leitorfiscal.netlify.app/",
+      codeUrl: "indisponivel"
+    },
+    {
+      id: 8,
       titleKey: "projectPokedexTitle",
       descriptionKey: "projectPokedexDesc",
       image: PokedexImage,
@@ -62,7 +92,7 @@ export const Projects = () => {
       codeUrl: "https://github.com/NicolasBianchini/Pokedex"
     },
     {
-      id: 6,
+      id: 9,
       titleKey: "projectMenteFemininaTitle",
       descriptionKey: "projectMenteFemininaDesc",
       image: MenteFemininaImage,
@@ -71,7 +101,7 @@ export const Projects = () => {
       codeUrl: "https://github.com/NicolasBianchini/TrabalhoPucrs.io-main"
     },
     {
-      id: 7,
+      id: 10,
       titleKey: "projectLavaFacilTitle",
       descriptionKey: "projectLavaFacilDesc",
       image: LavaFacilImage,
@@ -80,7 +110,7 @@ export const Projects = () => {
       codeUrl: "indisponivel"
     },
     {
-      id: 8,
+      id: 11,
       titleKey: "projectPortfolioTitle",
       descriptionKey: "projectPortfolioDesc",
       image: MeuPortfolioImage,
