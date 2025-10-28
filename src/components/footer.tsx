@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from "@heroui/react";
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/language-context';
@@ -83,9 +82,6 @@ export const Footer = () => {
         <div className="border-t border-default-200 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground-500 text-sm">
             © {currentYear} Nicolas Tresoldi. {t('allRightsReserved')}
-          </p>
-          <p className="text-foreground-500 text-sm mt-2 md:mt-0">
-            {t('designedBuilt')} <span className="text-primary-500">❤</span>
           </p>
         </div>
       </div>

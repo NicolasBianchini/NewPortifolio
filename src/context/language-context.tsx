@@ -41,6 +41,10 @@ const translations = {
     'liveDemo': 'Live Demo',
     'viewCode': 'View Code',
     'unavailable': 'Unavailable',
+    'readMore': 'Read More',
+    'readLess': 'Read Less',
+    'unavailableTooltip': 'This link is currently unavailable',
+    'projectGrexTooltip': 'Project with backend on Render, so the visualization link is unavailable',
 
     // Project titles
     'projectImobTitle': 'Real Estate Search System',
@@ -54,6 +58,8 @@ const translations = {
     'projectLavaFacilTitle': 'Laundry Company Website',
     'projectPortfolioTitle': 'My Portfolio',
     'projectLeitorFiscalTitle': 'Fiscal Reader',
+    'projectCRMTitle': 'CRM 168',
+    'projectGrexTitle': 'Grex',
 
     // Project descriptions
     'projectImobDesc': 'With a modern and easy-to-use interface, Imob connects you to the best opportunities in the real estate market. Ideal for those seeking agility, security, and a good experience when negotiating a property.',
@@ -67,6 +73,8 @@ const translations = {
     'projectFinatrixDesc': 'Finatrix is a financial management system with a WhatsApp bot that allows you to manage your finances and get personalized financial advice.',
     'projectRafisHotwheelsDesc': 'Rafis Hotwheels is a website dedicated to showcasing a personal collection of Hot Wheels cars. It features descriptions and images of various models, highlighting the author\'s appreciation for miniature automotive replicas. It\'s a visual and informative space for enthusiasts of the collection hobby, focusing on organization, identification, and appreciation of the collected items.',
     'projectLeitorFiscalDesc': 'The website displayed in the image is an online platform focused on reading and analyzing fiscal documents in XML format. With a clean and modern design, it allows users to drag or select XML files (CF-e, NFC-e, NF-e, CT-e) for extraction of fiscal information. The goal is to simplify the visualization and management of electronic fiscal documents, being useful for companies, accountants, and professionals in the fiscal area.',
+    'projectCRMDesc': 'CRM 168 is a CRM system for a company that allows you to manage your customers, sales, and other business functionalities.\n\nTest user: admin@crm168.com\nPassword: admin123',
+    'projectGrexDesc': 'Grex is a modern financial control platform developed to help you have complete control over your balances, expenses, and income in a simple and intuitive way. With Grex, it is possible to organize your personal or business finances, track transactions in real time, view intelligent graphs and reports, and make decisions based on clear and accurate data. Our goal is to make financial management easy, accessible, and efficient, so you can focus on what really matters: growing with security and financial balance.',
 
     // Contact
     'getInTouch': 'Get In Touch',
@@ -84,7 +92,6 @@ const translations = {
     // Footer
     'quickLinks': 'Quick Links',
     'allRightsReserved': 'All rights reserved.',
-    'designedBuilt': 'Designed & Built with',
   },
   'pt-br': {
     // Navbar
@@ -98,7 +105,7 @@ const translations = {
     // Hero
     'greeting': 'Olá, eu sou',
     'role': 'Desenvolvedor Full Stack',
-    'heroDescription': 'Eu construo aplicações web modernas com tecnologias de ponta. Apaixonado por criar experiências intuitivas e de alto desempenho.',
+    'heroDescription': 'Construo aplicações web modernas com tecnologias de ponta. Apaixonado por criar experiências intuitivas e de alto desempenho.',
     'viewWork': 'Ver Meus Projetos',
 
     // About
@@ -118,6 +125,10 @@ const translations = {
     'liveDemo': 'Demo ao Vivo',
     'viewCode': 'Ver Código',
     'unavailable': 'Indisponível',
+    'readMore': 'Ver mais',
+    'readLess': 'Ver menos',
+    'unavailableTooltip': 'Este link não está disponível no momento',
+    'projectGrexTooltip': 'Projeto com backend no Render, por isso o link de visualização está indisponível',
 
     // Project titles
     'projectImobTitle': 'Sistema de Busca Imóveis',
@@ -131,11 +142,13 @@ const translations = {
     'projectLavaFacilTitle': 'Site para uma empresa de lavanderia',
     'projectPortfolioTitle': 'Meu Portfólio',
     'projectLeitorFiscalTitle': 'Leitor Fiscal',
+    'projectCRMTitle': 'CRM 168',
+    'projectGrexTitle': 'Grex',
 
     // Project descriptions
     'projectImobDesc': 'Com uma interface moderna e fácil de usar, a Imob conecta você às melhores oportunidades do mercado imobiliário. Ideal para quem busca agilidade, segurança e uma boa experiência na hora de negociar um imóvel.',
     'projectTriunfoDesc': 'Sistema de gerenciamento de uma lavanderia, com funcionalidades de gerenciamento de clientes, notas fiscais, etc.',
-    'projectFGJNDesc': 'O sistema é um sistema de gerenciamento de uma empresa de advocacia, com funcionalidades de gerenciamento de clientes, processos, advogados, etc.',
+    'projectFGJNDesc': 'O sistema é um sistema de gerenciamento de uma empresa de advocacia, com funcionalidades de gerenciamento de clientes, processos, advogados, etc. \nUsuário para teste de admin: \n\nnicolas.tresoldi@fgjn.adv.br \n123456',
     'projectFinanceDesc': 'O site Análise de Gastos é uma ferramenta online para organizar e acompanhar suas finanças pessoais. Ele permite registrar despesas, visualizar gráficos interativos e categorizar os gastos, facilitando o controle financeiro do dia a dia. Ideal para quem busca entender melhor para onde o dinheiro está indo.',
     'projectPokedexDesc': 'O site Pokédex é uma aplicação interativa que permite explorar informações sobre diversos Pokémon. Com uma interface inspirada na Pokédex original, o usuário pode buscar Pokémon pelo nome ou número, visualizar imagens, tipos, habilidades e outras informações. É uma ferramenta divertida e educativa para fãs da franquia.',
     'projectMenteFemininaDesc': 'O site aborda a saúde mental das mulheres em diferentes contextos, como trabalho, maternidade e relações sociais. Apresenta informações, dados e reflexões com o objetivo de conscientizar sobre os desafios enfrentados pelas mulheres e a importância do cuidado psicológico.',
@@ -144,6 +157,8 @@ const translations = {
     'projectFinatrixDesc': 'Sistema de gerenciamento de gastos com bot de whatsapp, com funcionalidades de gerenciamento de gastos, categorias, metas, assistente financeiro, etc.',
     'projectRafisHotwheelsDesc': 'O site Rafis Hot Wheels Collection é uma página dedicada à exposição de uma coleção pessoal de carrinhos Hot Wheels. Apresenta descrições e imagens de diversos modelos, destacando o apreço do autor por miniaturas automobilísticas. É um espaço visual e informativo voltado para entusiastas de colecionismo, com foco na organização, identificação e apreciação dos itens colecionados..',
     'projectLeitorFiscalDesc': 'O site exibido na imagem é uma plataforma online voltada à leitura e análise de arquivos fiscais em formato XML. Com um design limpo e moderno, ele permite que os usuários arrastem ou selecionem arquivos XML (CF-e, NFC-e, NF-e, CT-e) para extração de informações fiscais. O objetivo é simplificar a visualização e o gerenciamento de documentos fiscais eletrônicos, sendo útil para empresas, contadores e profissionais da área fiscal.',
+    'projectCRMDesc': 'CRM 168 é um sistema de CRM para uma empresa que permite gerenciar seus clientes, vendas e outras funcionalidades de negócios.\n\nUsuário para teste: \n\nadmin@crm168.com \nadmin123',
+    'projectGrexDesc': 'A Grex é uma plataforma moderna de controle financeiro desenvolvida para ajudar você a ter total domínio sobre seus saldos, gastos e receitas de forma simples e intuitiva. Com a Grex, é possível organizar suas finanças pessoais ou empresariais, acompanhar movimentações em tempo real, visualizar gráficos e relatórios inteligentes, e tomar decisões com base em dados claros e precisos. Nosso objetivo é tornar a gestão financeira fácil, acessível e eficiente, para que você possa focar no que realmente importa: crescer com segurança e equilíbrio financeiro.',
 
     // Contact
     'getInTouch': 'Entre em Contato',
@@ -161,7 +176,6 @@ const translations = {
     // Footer
     'quickLinks': 'Links Rápidos',
     'allRightsReserved': 'Todos os direitos reservados.',
-    'designedBuilt': 'Projetado e Construído com',
   }
 };
 
